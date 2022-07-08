@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "62594f89-5624-4180-ad63-46c6c881fa0c": {
+      "ProjectGuid": "62594f89-5624-4180-ad63-46c6c881fa0c",
+      "DisplayName": "Area51-1-",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Fichiers divers",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

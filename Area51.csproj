@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{62594F89-5624-4180-AD63-46C6C881FA0C}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>Area51</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCCore-Standalone">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCCore-Standalone.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="DataModel">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\DataModel.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.UI.Elements">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.UI.Elements.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDKBase">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCSDKBase.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon-DotNet">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\Photon-DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK3A">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK3A.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK3">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK3.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK2">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK2.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Il2CppSystem">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.Common">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCCore-Editor">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCCore-Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Il2CppImageConversionManager">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.Il2CppImageConversionManager.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.UI.Core">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.UI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\LPHEW01550\Downloads\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Area51\Events\OnAssetBundleLoadEvent.cs" />
+    <Compile Include="Area51\Events\OnAvatarLoadedEvent.cs" />
+    <Compile Include="Area51\Events\OnEventEvent.cs" />
+    <Compile Include="Area51\Events\OnNetworkSanityEvent.cs" />
+    <Compile Include="Area51\Events\OnObjectInstantiatedEvent.cs" />
+    <Compile Include="Area51\Events\OnPhotonPeerEvent.cs" />
+    <Compile Include="Area51\Events\OnPlayerJoinEvent.cs" />
+    <Compile Include="Area51\Events\OnPlayerLeaveEvent.cs" />
+    <Compile Include="Area51\Events\OnRPCEvent.cs" />
+    <Compile Include="Area51\Events\OnSceneLoadedEvent.cs" />
+    <Compile Include="Area51\Events\OnSendOPEvent.cs" />
+    <Compile Include="Area51\Events\OnUdonEvent.cs" />
+    <Compile Include="Area51\Events\OnUpdateEvent.cs" />
+    <Compile Include="Area51\Events\OnWorldInitEvent.cs" />
+    <Compile Include="Area51\Main.cs" />
+    <Compile Include="Area51\Modules\Events\OnUIEvent.cs" />
+    <Compile Include="Area51\Modules\Exploits\Freecam.cs" />
+    <Compile Include="Area51\Module\BaseModule.cs" />
+    <Compile Include="Area51\Module\Bot\Http.cs" />
+    <Compile Include="Area51\Module\Bot\Local\CuddleBot1.cs" />
+    <Compile Include="Area51\Module\Bot\Local\CuddleBot2.cs" />
+    <Compile Include="Area51\Module\Bot\Local\JoinQuestCrash.cs" />
+    <Compile Include="Area51\Module\Bot\Local\KIllBots.cs" />
+    <Compile Include="Area51\Module\Bot\Remote\KillWorld.cs" />
+    <Compile Include="Area51\Module\CustomNameplate.cs" />
+    <Compile Include="Area51\Module\Exploit\AssetBundleCrash.cs" />
+    <Compile Include="Area51\Module\Exploit\AudioCrash.cs" />
+    <Compile Include="Area51\Module\Exploit\CorreuptPC.cs" />
+    <Compile Include="Area51\Module\Exploit\EthosBypass.cs" />
+    <Compile Include="Area51\Module\Exploit\Event9AudioCrash.cs" />
+    <Compile Include="Area51\Module\Exploit\Event9V3.cs" />
+    <Compile Include="Area51\Module\Exploit\EventNineNull.cs" />
+    <Compile Include="Area51\Module\Exploit\Finder.cs" />
+    <Compile Include="Area51\Module\Exploit\GameClose.cs" />
+    <Compile Include="Area51\Module\Exploit\HideSelf.cs" />
+    <Compile Include="Area51\Module\Exploit\InstanceLock.cs" />
+    <Compile Include="Area51\Module\Exploit\megaqlagger.cs" />
+    <Compile Include="Area51\Module\Exploit\nTom.cs" />
+    <Compile Include="Area51\Module\Exploit\Photon_Exploit\FakeLag.cs" />
+    <Compile Include="Area51\Module\Exploit\Photon_Exploit\FakeLagMic.cs" />
+    <Compile Include="Area51\Module\Exploit\Photon_Exploit\ItemLag.cs" />
+    <Compile Include="Area51\Module\Exploit\qaudiolagger.cs" />
+    <Compile Include="Area51\Module\Exploit\Qlagger.cs" />
+    <Compile Include="Area51\Module\Exploit\QuestCrash.cs" />
+    <Compile Include="Area51\Module\Exploit\SendRPCDebug.cs" />
+    <Compile Include="Area51\Module\Exploit\Starlagger.cs" />
+    <Compile Include="Area51\Module\Exploit\UdonExploitFinder.cs" />
+    <Compile Include="Area51\Module\Exploit\UdonExploits\udonNuke.cs" />
+    <Compile Include="Area51\Module\Exploit\USpeakEarRape.cs" />
+    <Compile Include="Area51\Module\Exploit\VoidBypass.cs" />
+    <Compile Include="Area51\Module\Exploit\VRCA.cs" />
+    <Compile Include="Area51\Module\Exploit\VRCW.cs" />
+    <Compile Include="Area51\Module\Movement\Fly.cs" />
+    <Compile Include="Area51\Module\Movement\Speed.cs" />
+    <Compile Include="Area51\Module\Player\Audio\MediaControll.cs" />
+    <Compile Include="Area51\Module\Player\Audio\_16k.cs" />
+    <Compile Include="Area51\Module\Player\Audio\_18k.cs" />
+    <Compile Include="Area51\Module\Player\Audio\_24k.cs" />
+    <Compile Include="Area51\Module\Player\Audio\_512k.cs" />
+    <Compile Include="Area51\Module\Player\AvatarID.cs" />
+    <Compile Include="Area51\Module\Player\Clippingfix.cs" />
+    <Compile Include="Area51\Module\Player\CustomUdonEvent.cs" />
+    <Compile Include="Area51\Module\Player\DrippedOut.cs" />
+    <Compile Include="Area51\Module\Player\FPSUnlocker.cs" />
+    <Compile Include="Area51\Module\Player\GetUdonEventList.cs" />
+    <Compile Include="Area51\Module\Player\HeadFlipper.cs" />
+    <Compile Include="Area51\Module\Player\LoudMic.cs" />
+    <Compile Include="Area51\Module\Player\PersonalMirror.cs" />
+    <Compile Include="Area51\Module\Player\PersonalMirrorBeta.cs" />
+    <Compile Include="Area51\Module\Player\SendEvent.cs" />
+    <Compile Include="Area51\Module\Player\XBoxMic.cs" />
+    <Compile Include="Area51\Module\Player\XBoxMicd.cs" />
+    <Compile Include="Area51\Module\Safety\Anti209.cs" />
+    <Compile Include="Area51\Module\Safety\Anti210.cs" />
+    <Compile Include="Area51\Module\Safety\Anti7.cs" />
+    <Compile Include="Area51\Module\Safety\AntiAviCrash.cs" />
+    <Compile Include="Area51\Module\Safety\AntiBot.cs" />
+    <Compile Include="Area51\Module\Safety\AntiUdon.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiAnimators.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiAssetCrash.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiAudio.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiBones.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiCloth.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiColliders.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiCrashClothPostProcess.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiCrashDynamicBoneColliderPostProcess.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiCrashDynamicBonePostProcess.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiCrashLightSourcePostProcess.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiCrashMaterialPostProcess.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiCrashParticleSystemPostProcess.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiCrashRendererPostProcess.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiCrashShaderPostProcess.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiLight.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiMatirials.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiMesh.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiParticles.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiShader.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\AntiTransform.cs" />
+    <Compile Include="Area51\Module\Safety\Avatar\MunchenAntiCrash.cs" />
+    <Compile Include="Area51\Module\Safety\ExploitLogs.cs" />
+    <Compile Include="Area51\Module\Safety\FreezePlayers.cs" />
+    <Compile Include="Area51\Module\Safety\Photon\AntiRPC.cs" />
+    <Compile Include="Area51\Module\Safety\Photon\PhotonProtection.cs" />
+    <Compile Include="Area51\Module\Settings\DumpEvents\Dump1.cs" />
+    <Compile Include="Area51\Module\Settings\DumpEvents\Dump209.cs" />
+    <Compile Include="Area51\Module\Settings\DumpEvents\Dump210.cs" />
+    <Compile Include="Area51\Module\Settings\DumpEvents\Dump6.cs" />
+    <Compile Include="Area51\Module\Settings\DumpEvents\Dump7.cs" />
+    <Compile Include="Area51\Module\Settings\Logging\AssetBundleLogger.cs" />
+    <Compile Include="Area51\Module\Settings\Logging\AvatarLogger.cs" />
+    <Compile Include="Area51\Module\Settings\Logging\EventLogger.cs" />
+    <Compile Include="Area51\Module\Settings\Logging\JoinLogger.cs" />
+    <Compile Include="Area51\Module\Settings\Logging\ModerationLogger.cs" />
+    <Compile Include="Area51\Module\Settings\Logging\OPSendLogger.cs" />
+    <Compile Include="Area51\Module\Settings\Logging\RpcLogger.cs" />
+    <Compile Include="Area51\Module\Settings\Logging\SteamID.cs" />
+    <Compile Include="Area51\Module\Settings\Logging\UdonLogger.cs" />
+    <Compile Include="Area51\Module\Settings\Logging\UnityLogger.cs" />
+    <Compile Include="Area51\Module\Settings\Logging\VCRALogger.cs" />
+    <Compile Include="Area51\Module\Settings\Preformance\ConsoleClear.cs" />
+    <Compile Include="Area51\Module\Settings\Preformance\HideChairs.cs" />
+    <Compile Include="Area51\Module\Settings\Preformance\HidePickUps.cs" />
+    <Compile Include="Area51\Module\Settings\Preformance\HideVideoPlayers.cs" />
+    <Compile Include="Area51\Module\Settings\Preformance\KeyBinds.cs" />
+    <Compile Include="Area51\Module\Settings\Preformance\QuickRestart.cs" />
+    <Compile Include="Area51\Module\Settings\Preformance\RestartAndRejoin.cs" />
+    <Compile Include="Area51\Module\Settings\Render\BlockedPlayers.cs" />
+    <Compile Include="Area51\Module\Settings\Render\CapsuleEsp.cs" />
+    <Compile Include="Area51\Module\Settings\Render\ClockSettings.cs" />
+    <Compile Include="Area51\Module\Settings\Render\CustomNameplates.cs" />
+    <Compile Include="Area51\Module\Settings\Render\DebugLog.cs" />
+    <Compile Include="Area51\Module\Settings\Render\ObjectESP.cs" />
+    <Compile Include="Area51\Module\Settings\Render\PlayerList.cs" />
+    <Compile Include="Area51\Module\Settings\Render\TimePanel.cs" />
+    <Compile Include="Area51\Module\Settings\Render\TriggerESP.cs" />
+    <Compile Include="Area51\Module\Settings\Spoofer\FPSSpoofer.cs" />
+    <Compile Include="Area51\Module\Settings\Spoofer\PingSpoofer.cs" />
+    <Compile Include="Area51\Module\Settings\Theme\AlienTheme.cs" />
+    <Compile Include="Area51\Module\Settings\Theme\ButtonsBlue.cs" />
+    <Compile Include="Area51\Module\Settings\Theme\ButtonsGreen.cs" />
+    <Compile Include="Area51\Module\Settings\Theme\ButtonsMagenta.cs" />
+    <Compile Include="Area51\Module\Settings\Theme\ButtonsRed.cs" />
+    <Compile Include="Area51\Module\Settings\Theme\CustomBGImage.cs" />
+    <Compile Include="Area51\Module\Settings\Theme\Logout.cs" />
+    <Compile Include="Area51\Module\Settings\Theme\munchen.cs" />
+    <Compile Include="Area51\Module\Settings\Theme\RetroTheme.cs" />
+    <Compile Include="Area51\Module\TargetMenu\AvatSelected.cs" />
+    <Compile Include="Area51\Module\TargetMenu\CopyData.cs" />
+    <Compile Include="Area51\Module\TargetMenu\DownloadVRCSelected.cs" />
+    <Compile Include="Area51\Module\TargetMenu\ForceClone.cs" />
+    <Compile Include="Area51\Module\TargetMenu\ForceLewd.cs" />
+    <Compile Include="Area51\Module\TargetMenu\Murder4_Settings\BlindLoopTarget.cs" />
+    <Compile Include="Area51\Module\TargetMenu\Murder4_Settings\BlindTarget.cs" />
+    <Compile Include="Area51\Module\TargetMenu\Murder4_Settings\BringItemsTarget.cs" />
+    <Compile Include="Area51\Module\TargetMenu\Murder4_Settings\BringKnifeTarget.cs" />
+    <Compile Include="Area51\Module\TargetMenu\Murder4_Settings\BringRevolverTarget.cs" />
+    <Compile Include="Area51\Module\TargetMenu\Murder4_Settings\BystanderAssignTarget.cs" />
+    <Compile Include="Area51\Module\TargetMenu\Murder4_Settings\DetectiveAssignTarget.cs" />
+    <Compile Include="Area51\Module\TargetMenu\Murder4_Settings\ForceSpawn.cs" />
+    <Compile Include="Area51\Module\TargetMenu\Murder4_Settings\KillLoopTarget.cs" />
+    <Compile Include="Area51\Module\TargetMenu\Murder4_Settings\MurderAssignTarget.cs" />
+    <Compile Include="Area51\Module\TargetMenu\MurderKillTarget.cs" />
+    <Compile Include="Area51\Module\TargetMenu\ReUploadAvatar.cs" />
+    <Compile Include="Area51\Module\TargetMenu\ReUploadTUT.cs" />
+    <Compile Include="Area51\Module\TargetMenu\TargetOrbitch.cs" />
+    <Compile Include="Area51\Module\TargetMenu\Tel2User.cs" />
+    <Compile Include="Area51\Module\TargetMenu\UserIDSelected.cs" />
+    <Compile Include="Area51\Module\TargetMenu\VoiceIM.cs" />
+    <Compile Include="Area51\Module\TargetMenu\World_Hacks\AmongUs_Settings\AForceSpawn.cs" />
+    <Compile Include="Area51\Module\TargetMenu\World_Hacks\AmongUs_Settings\AmongUsKill.cs" />
+    <Compile Include="Area51\Module\TargetMenu\World_Hacks\AmongUs_Settings\AssignCrew.cs" />
+    <Compile Include="Area51\Module\TargetMenu\World_Hacks\AmongUs_Settings\AssignImposter.cs" />
+    <Compile Include="Area51\Module\TargetMenu\World_Hacks\battledisc\ForceSpawnBD.cs" />
+    <Compile Include="Area51\Module\TargetMenu\World_Hacks\JustB\LockPlayerMovement.cs" />
+    <Compile Include="Area51\Module\TargetMenu\World_Hacks\movmC\TargetLag.cs" />
+    <Compile Include="Area51\Module\TargetMenu\World_Hacks\Murder4_Settings\murder4UdonSpam.cs" />
+    <Compile Include="Area51\Module\World\CopyUserID.cs" />
+    <Compile Include="Area51\Module\World\CopyWID.cs" />
+    <Compile Include="Area51\Module\World\ForcePickups.cs" />
+    <Compile Include="Area51\Module\World\FreezeItems.cs" />
+    <Compile Include="Area51\Module\World\InfinityJump.cs" />
+    <Compile Include="Area51\Module\World\ItemOrbit.cs" />
+    <Compile Include="Area51\Module\World\JoinByID.cs" />
+    <Compile Include="Area51\Module\World\Rejoin.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_AbortGame.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_AssignCrew.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_AssignImposter.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_BystandersWin.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_CallMeeting.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_CloseVote.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_KillAll.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_Misc.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_MurderWin.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_ReportBody.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_SkipVote.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_StartGame.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Among_Us\A_TaskDone.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Area51Engine\GetTriggerList.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Area51Engine\TriggerExploitFinder.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Area51Engine\TriggerNuke.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\CustomTriggerEvent.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\ForceRespawn.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\BlindPeople.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\CreatorSpoof.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\EliteSpoof.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\EnableRooms.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\JustBClub.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\JustHClub.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\Room1.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\Room2.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\Room3.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\Room4.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\Room5.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\Room6.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\Room7.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Just_B\TPPeople.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\MovieNChill\MTPEveryone.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\movmC\TargetMovCTP.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\AbortGame.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\BlindAll.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\BringItems.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\BringKnife.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\BringRevolver.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\BringSmoke.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\BystanderWin.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\CloseDoors.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\DetectiveAssign.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\EveryoneMurder.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\FlashLoop.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\ForcePickup.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\KillAll.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\KillLoop.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\LockDoors.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\MurderAssign.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\MurderMisc.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\MurderWin.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\OpenDoors.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\ShoveDoors.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\Murder_4\StartGame.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\NameSpoofer.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\sovren\TPSEveryone.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\sov\TargetSovrenTP.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\todtartget\TargetTODTP.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\tod\TODTP.cs" />
+    <Compile Include="Area51\Module\World\World_Hacks\ZombieTag\PrisionMisc.cs" />
+    <Compile Include="Area51\SDK\Alien.cs" />
+    <Compile Include="Area51\SDK\AlienMisc.cs" />
+    <Compile Include="Area51\SDK\Area51Console.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\LoadSprite.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMBadgeButton.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMButtonGroup.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMButtonIcons.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMConsoleButton.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMHeader.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMLable.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMMenu.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMNestedButton.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMPopup.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMSingleButton.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMTab.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMTEST.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\QMToggleButton.cs" />
+    <Compile Include="Area51\SDK\ButtonAPI\VrConsoleLog.cs" />
+    <Compile Include="Area51\SDK\ButtonIcons.cs" />
+    <Compile Include="Area51\SDK\Config.cs" />
+    <Compile Include="Area51\SDK\Keybinds.cs" />
+    <Compile Include="Area51\SDK\LogHandler.cs" />
+    <Compile Include="Area51\SDK\MenuUI.cs" />
+    <Compile Include="Area51\SDK\PatchAPI\Patches\_AssetManagement.cs" />
+    <Compile Include="Area51\SDK\Patching\AlienPatch.cs" />
+    <Compile Include="Area51\SDK\Patching\Patches\_AvatarAssetBundleLoad.cs" />
+    <Compile Include="Area51\SDK\Patching\Patches\_Logging.cs" />
+    <Compile Include="Area51\SDK\Patching\Patches\_OnEvent.cs" />
+    <Compile Include="Area51\SDK\Patching\Patches\_OnUInit.cs" />
+    <Compile Include="Area51\SDK\Patching\Patches\_Spoofers.cs" />
+    <Compile Include="Area51\SDK\Patching\Patches\_Udon.cs" />
+    <Compile Include="Area51\SDK\Photon\PhotonExtensions.cs" />
+    <Compile Include="Area51\SDK\Photon\Serialization.cs" />
+    <Compile Include="Area51\SDK\PlayerWrapper.cs" />
+    <Compile Include="Area51\SDK\Security\SecurityCheck.cs" />
+    <Compile Include="Area51\SDK\UdonExploitManager.cs" />
+    <Compile Include="Area51\SDK\WorldWrapper.cs" />
+    <Compile Include="Area51\Sockets\BotServer\BotServer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
